@@ -41,12 +41,12 @@ var homeContent = `<div class="site-container">
    <div class="form">
         <h1>Booking form</h1>
         <div class="double-input">
-            <input class="left" type="text" placeholder="name.">
-            <input class="right" type="text" placeholder="email.">
+            <input class="left" type="text" placeholder="name...">
+            <input class="right" type="text" placeholder="email...">
         </div>
         <div class="double-input">
-            <input class="left" type="text" placeholder="country.">
-            <input class="right" type="text" placeholder="hotel.">
+            <input class="left" type="text" placeholder="country...">
+            <input class="right" type="text" placeholder="hotel...">
         </div>
         <div class="checkInOut">
             <div class="date-input">
@@ -111,7 +111,7 @@ var homeContent = `<div class="site-container">
             </div>
         </div>
         <div class="message">
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="message."></textarea>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="message..."></textarea>
         </div>
         <input type="submit" class="submit" value="SUBMIT">
         <!-- <div class="submit">SUBMIT</div> -->
