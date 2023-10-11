@@ -1,127 +1,139 @@
-.tour-hero{
-    width: 80%;
-    height: auto;
-    margin: 0 auto;
-    padding-top: 120px;
-    margin-bottom: 40px;
-    // display: flex;
-    // position: relative;
-    // background-color: red;
-
-    .hero-container{
-        position: relative;
-        background-color: black;
-        color: white;
-        font-family: 'proxima-nova';
-        width: 100%;
-        height: auto;
-        // width: 981px;
-        // height: 413px;
-        // margin: 0 auto;
-        display: flex;
-        img{
-            width: 100%;
-            height: auto;
-            opacity: 0.8;
-            // margin: 0;
-        }
-        h1{
-            position: absolute;
-            top: 0;
-            left: 0;
-            font-size: 80px;
-            // margin: 18px 0 0 20px;
-            margin-left: 20px;
-            // margin: 0;
-        }
-        p{
-            font-size: 30px;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            margin-right: 20px;
-            // margin: 0;
-        }
-    }
-
-    @media only screen and (max-width: 1000px){
-
-        .hero-container{
-            display: flex;
-            width: 100%;
-            height: auto;
-            h1{
-                font-size: 40px;
-            }
-            p{
-                font-size: 20px;
-            }
-        }
-    }
-    @media only screen and (max-width: 400px){
-
-        .hero-container{
-            display: flex;
-            width: 100%;
-            height: auto;
-            h1{
-                font-size: 20px;
-            }
-            p{
-                font-size: 10px;
-            }
-        }
-    }
-}
-
-.photo-container{
-    .wrapper{
-        max-width: 978px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 0 auto;
-        img{
-            margin-bottom: 55px;
-        }
-    }
-}
-
-@media only screen and (max-width: 1000px){
-    .photo-container{
-        .wrapper{
-            width: 638px;
-        }
-    }
-}
-
-@media only screen and (max-width: 660px){
-    .photo-container{
-        .wrapper{
-            width: 298px;
-        }
-    }
-}
-
-.day-container{
-    // background-color: red;
-    .day-content{
+.site-container{
+    padding-bottom: 80px;
+    .tour-hero{
         width: 80%;
+        height: auto;
         margin: 0 auto;
-        padding: 20px 0;
-        font-family: 'proxima-nova';
-        // background-color: blue;
-        h1{
-            font-size: 60px;
+        padding-top: 120px;
+        margin-bottom: 40px;
+        // display: flex;
+        // position: relative;
+        // background-color: red;
+    
+        .hero-container{
+            position: relative;
+            background-color: black;
+            color: white;
+            font-family: 'proxima-nova';
+            width: 100%;
+            height: auto;
+            // width: 981px;
+            // height: 413px;
+            // margin: 0 auto;
+            display: flex;
+            img{
+                width: 100%;
+                height: auto;
+                opacity: 0.8;
+                // margin: 0;
+            }
+            h1{
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: 80px;
+                // margin: 18px 0 0 20px;
+                margin-left: 20px;
+                // margin: 0;
+            }
+            p{
+                font-size: 30px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                margin-right: 20px;
+                // margin: 0;
+            }
         }
-        hr{
-            border: 2px solid black;
-            width: 160px;
-            margin-top: -20px;
-            margin-bottom: 36px;
+    
+        @media only screen and (max-width: 1000px){
+    
+            .hero-container{
+                display: flex;
+                width: 100%;
+                height: auto;
+                h1{
+                    font-size: 40px;
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
         }
-        p{
-            font-size: 16px;
+        @media only screen and (max-width: 400px){
+    
+            .hero-container{
+                display: flex;
+                width: 100%;
+                height: auto;
+                h1{
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 10px;
+                }
+            }
         }
     }
+    
+    .photo-container{
+        .wrapper{
+            max-width: 978px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 auto;
+            img{
+                margin-bottom: 55px;
+            }
+        }
+    }
+    
+    @media only screen and (max-width: 1000px){
+        .photo-container{
+            .wrapper{
+                width: 638px;
+            }
+        }
+    }
+    
+    @media only screen and (max-width: 660px){
+        .photo-container{
+            .wrapper{
+                width: 298px;
+            }
+        }
+    }
+    
+    .day-container{
+        // background-color: red;
+        padding-bottom: 40px;
+        .day-content{
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0;
+            font-family: 'proxima-nova';
+            // background-color: blue;
+            h1{
+                font-size: 60px;
+            }
+            hr{
+                border: 2px solid black;
+                width: 160px;
+                margin-top: -20px;
+                margin-bottom: 36px;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+    a{
+        text-decoration: none;
+    }
+    .book-now{
+        text-align: center;
+        @include learnMoreBtn();
+    }
 }
+

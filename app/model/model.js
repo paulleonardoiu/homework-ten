@@ -37,7 +37,7 @@ var homeContent = `<div class="site-container">
         </div>
     </div>
 </section>
-<section class="booking">
+<section id="booking" class="booking">
    <div class="form">
         <h1>Booking form</h1>
         <div class="double-input">
@@ -406,6 +406,9 @@ var israelContent = `<div class="site-container">
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p> 
     </div>
 </div>
+<a id="bookNowBtn" href="#">
+    <div class="book-now">BOOK NOW</div>
+</a>
 </div>`;
 var usaContent = `<div class="site-container">
 <div class="tour-hero">
@@ -439,6 +442,9 @@ var usaContent = `<div class="site-container">
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p> 
     </div>
 </div>
+<a id="bookNowBtn" href="#">
+    <div class="book-now">BOOK NOW</div>
+</a>
 </div>`;
 var australiaContent = `<div class="site-container">
 <div class="tour-hero">
@@ -472,6 +478,9 @@ var australiaContent = `<div class="site-container">
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p> 
     </div>
 </div>
+<a id="bookNowBtn" href="#">
+    <div class="book-now">BOOK NOW</div>
+</a>
 </div>`;
 var newZealandContent = `<div class="site-container">
 <div class="tour-hero">
@@ -505,6 +514,9 @@ var newZealandContent = `<div class="site-container">
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p> 
     </div>
 </div>
+<a id="bookNowBtn" href="#">
+    <div class="book-now">BOOK NOW</div>
+</a>
 </div>`;
 var franceContent = `<div class="site-container">
 <div class="tour-hero">
@@ -538,6 +550,9 @@ var franceContent = `<div class="site-container">
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p> 
     </div>
 </div>
+<a id="bookNowBtn" href="#">
+    <div class="book-now">BOOK NOW</div>
+</a>
 </div>`;
 var egyptContent = `<div class="site-container">
 <div class="tour-hero">
@@ -571,6 +586,9 @@ var egyptContent = `<div class="site-container">
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p> 
     </div>
 </div>
+<a id="bookNowBtn" href="#">
+    <div class="book-now">BOOK NOW</div>
+</a>
 </div>`;
 var japanContent = `<div class="site-container">
 <div class="tour-hero">
@@ -604,6 +622,9 @@ var japanContent = `<div class="site-container">
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p> 
     </div>
 </div>
+<a id="bookNowBtn" href="#">
+    <div class="book-now">BOOK NOW</div>
+</a>
 </div>`;
 var canadaContent = `<div class="site-container">
 <div class="tour-hero">
@@ -637,6 +658,9 @@ var canadaContent = `<div class="site-container">
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p> 
     </div>
 </div>
+<a id="bookNowBtn" href="#">
+    <div class="book-now">BOOK NOW</div>
+</a>
 </div>`;
 var uaeContent = `<div class="site-container">
 <div class="tour-hero">
@@ -670,21 +694,31 @@ var uaeContent = `<div class="site-container">
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p> 
     </div>
 </div>
+<a id="bookNowBtn" href="#">
+    <div class="book-now">BOOK NOW</div>
+</a>
 </div>`;
 
 export function changePageContent(pageID){
-    let pageName = pageID + "Content";
-
-    // Change Page Content
-    $("#app").html(eval(pageName));
-
-    // Change Nav Bar
-    if(pageID == "home"){
-        $("#navbar").addClass("main-nav");
-        $("#navbar").removeClass("white-nav");
+    if(pageID == "booking"){
+        $("#app").html(eval("homeContent"));
+        window.location.href = "#booking";
     }else{
-        $("#navbar").addClass("white-nav");
-        $("#navbar").removeClass("main-nav");
+        let pageName = pageID + "Content";
+
+        // Change Page Content
+        $("#app").html(eval(pageName));
+        // Change Page Title
+        $("title").html("Travel-fly " + pageID.toUpperCase());
+    
+        // Change Nav Bar
+        if(pageID == "home"){
+            $("#navbar").addClass("main-nav");
+            $("#navbar").removeClass("white-nav");
+        }else{
+            $("#navbar").addClass("white-nav");
+            $("#navbar").removeClass("main-nav");
+        }
     }
 
     // Highlight Active Nav Link

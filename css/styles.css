@@ -827,14 +827,17 @@ footer .container .socials i {
   }
 }
 
-.tour-hero {
+.site-container {
+  padding-bottom: 80px;
+}
+.site-container .tour-hero {
   width: 80%;
   height: auto;
   margin: 0 auto;
   padding-top: 120px;
   margin-bottom: 40px;
 }
-.tour-hero .hero-container {
+.site-container .tour-hero .hero-container {
   position: relative;
   background-color: black;
   color: white;
@@ -845,19 +848,19 @@ footer .container .socials i {
   display: -ms-flexbox;
   display: flex;
 }
-.tour-hero .hero-container img {
+.site-container .tour-hero .hero-container img {
   width: 100%;
   height: auto;
   opacity: 0.8;
 }
-.tour-hero .hero-container h1 {
+.site-container .tour-hero .hero-container h1 {
   position: absolute;
   top: 0;
   left: 0;
   font-size: 80px;
   margin-left: 20px;
 }
-.tour-hero .hero-container p {
+.site-container .tour-hero .hero-container p {
   font-size: 30px;
   position: absolute;
   bottom: 0;
@@ -865,37 +868,36 @@ footer .container .socials i {
   margin-right: 20px;
 }
 @media only screen and (max-width: 1000px) {
-  .tour-hero .hero-container {
+  .site-container .tour-hero .hero-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: auto;
   }
-  .tour-hero .hero-container h1 {
+  .site-container .tour-hero .hero-container h1 {
     font-size: 40px;
   }
-  .tour-hero .hero-container p {
+  .site-container .tour-hero .hero-container p {
     font-size: 20px;
   }
 }
 @media only screen and (max-width: 400px) {
-  .tour-hero .hero-container {
+  .site-container .tour-hero .hero-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: auto;
   }
-  .tour-hero .hero-container h1 {
+  .site-container .tour-hero .hero-container h1 {
     font-size: 20px;
   }
-  .tour-hero .hero-container p {
+  .site-container .tour-hero .hero-container p {
     font-size: 10px;
   }
 }
-
-.photo-container .wrapper {
+.site-container .photo-container .wrapper {
   max-width: 978px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -907,37 +909,57 @@ footer .container .socials i {
           justify-content: space-between;
   margin: 0 auto;
 }
-.photo-container .wrapper img {
+.site-container .photo-container .wrapper img {
   margin-bottom: 55px;
 }
-
 @media only screen and (max-width: 1000px) {
-  .photo-container .wrapper {
+  .site-container .photo-container .wrapper {
     width: 638px;
   }
 }
 @media only screen and (max-width: 660px) {
-  .photo-container .wrapper {
+  .site-container .photo-container .wrapper {
     width: 298px;
   }
 }
-.day-container .day-content {
+.site-container .day-container {
+  padding-bottom: 40px;
+}
+.site-container .day-container .day-content {
   width: 80%;
   margin: 0 auto;
   padding: 20px 0;
   font-family: "proxima-nova";
 }
-.day-container .day-content h1 {
+.site-container .day-container .day-content h1 {
   font-size: 60px;
 }
-.day-container .day-content hr {
+.site-container .day-container .day-content hr {
   border: 2px solid black;
   width: 160px;
   margin-top: -20px;
   margin-bottom: 36px;
 }
-.day-container .day-content p {
+.site-container .day-container .day-content p {
   font-size: 16px;
+}
+.site-container a {
+  text-decoration: none;
+}
+.site-container .book-now {
+  text-align: center;
+  font-family: "proxima-nova";
+  margin: 0 auto;
+  background-color: #79ADDC;
+  color: white;
+  padding: 11px 21px;
+  border: none;
+  width: 135px;
+  height: 40px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 20px;
+  text-align: center;
 }
 
 .special-offers-page {
@@ -1024,6 +1046,7 @@ footer .container .socials i {
 }
 .special-offers-page .container .content .offer-right .learnMore {
   font-family: "proxima-nova";
+  margin: 0 auto;
   background-color: #79ADDC;
   color: white;
   padding: 11px 21px;
@@ -1033,6 +1056,7 @@ footer .container .socials i {
   font-size: 15px;
   cursor: pointer;
   border-radius: 20px;
+  text-align: center;
 }
 
 .blog-page {

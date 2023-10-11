@@ -15,6 +15,7 @@ $(document).ready(function(){
 // Learn More Buttons
 var homePromo = ".promos .promo-container a";
 var toursPromo = ".tour .content a";
+var bookNow = "#bookNowBtn";
 
 // Read More Click
 $(document).on("click", ".read-more", function(e){
@@ -31,4 +32,10 @@ $(document).on("click", homePromo, function(e){
 $(document).on("click", toursPromo, function(e){
     let btnId = e.currentTarget.id;
     changePageContent(btnId);
+})
+
+// Book Now Click
+$(document).on("click", bookNow, function(e){
+    let btnId = e.currentTarget.id;
+    changePageContent("booking");
 })

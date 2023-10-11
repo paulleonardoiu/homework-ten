@@ -1,6 +1,6 @@
 @mixin learnMoreBtn(){
     font-family: 'proxima-nova';
-    // margin: 0 auto;
+    margin: 0 auto;
     background-color: #79ADDC;
     color: white;
     padding: 11px 21px;
@@ -10,6 +10,8 @@
     font-size: 15px;
     cursor: pointer;
     border-radius: 20px;
+    text-align: center;
+    
 }
 
 @mixin underline($width, $margin-top){
