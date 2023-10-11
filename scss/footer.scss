@@ -1,0 +1,40 @@
+footer{
+    background-color: #79ADDC;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        // background-color: white;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1,p{
+            font-family: 'proxima-nova';
+            color: white;
+            margin: 0;
+        }
+
+        h1{
+            font-size: 20px;
+            color: white;
+            // font-size: 20px;
+            padding: 8px 4px;
+            // background-color: red;
+            margin-left: 20px;
+            border: 2px solid white;
+        }
+        p{
+            font-size: 12px;
+            font-weight: 100;
+        }
+        .socials{
+            i{
+                font-size: 25px;
+                color: white;
+                margin-right: 5px;
+            }
+        }
+    }
+}

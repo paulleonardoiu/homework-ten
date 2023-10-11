@@ -1,0 +1,117 @@
+.tours-page{
+    background-color: white;
+    width: 100%;
+    min-height: 100%;
+    // display: flex;
+    // padding-top: 100px;
+    
+    .tours-container{
+        margin: 0 auto;
+        padding-top: 120px;
+        // padding: 120px 90px;
+        width: 100%;
+        .tours-banner{
+            width: 80%;
+            height: 200px;
+            background-image: url(../images/tours/tours-banner.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+
+            .header{
+                p{
+                    margin: 0;
+                    font-family: 'proxima-nova';
+                    color: white;
+                    font-size: 60px;
+                }
+            }
+        }
+    
+        .tours-content{
+            .wrapper{
+                margin: 0 auto;
+                width: 818px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding-bottom: 45px;
+                .tour{
+                    margin-bottom: 55px;
+                    width: 236px;
+                    height: 304px;
+                    // margin: 55px;
+                    background-color: black;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: 'proxima-nova';
+                    position: relative;
+
+                    
+                        img{
+                            width: 100%;
+                            background-color: rgba(0,0,0,1);
+                            opacity: 0.5;
+                            // height: auto;
+                        }
+                    
+                    .content{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                        color: white;
+                        width: 100%;
+                        // padding: 0 10px;
+                        h1{
+                            font-size: 40px;
+                            font-weight: 100;
+                            margin-bottom: 0;
+                        }
+                        h2{
+                            margin-bottom: 50px;
+                            font-weight: 100;
+                        }
+                        a{
+                            text-decoration: none;
+                        }
+                        .learn-more{
+                            // @include learnMoreBtn;
+                            margin: 0 auto;
+                            background-color: #79ADDC;
+                            color: white;
+                            padding: 11px 21px;
+                            border: none;
+                            width: 135px;
+                            height: 40px;
+                            font-size: 15px;
+                            cursor: pointer;
+                            border-radius: 20px;
+                        }
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 830px){
+                .wrapper{
+                    width: 527px;
+                }
+            }
+
+            @media only screen and (max-width: 540px){
+                .wrapper{
+                    width: 236px;
+                }
+            }
+        }
+    }
+}

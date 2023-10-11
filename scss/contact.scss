@@ -1,0 +1,89 @@
+.contact-page{
+    width: 100%;
+    min-height: 100%;
+    background-color: white;
+    font-family: 'proxima-nova';
+
+    // Mobile
+    @media only screen and (max-width: 800px){
+        .container{
+            .content{
+                .map{
+                    margin: 0 auto;
+                }
+                flex-direction: column;
+            }
+        }
+    }
+
+    // Desktop
+    @media only screen and (min-width: 800px){
+        .container{
+            .content{
+                form{
+                    margin-right: 200px;
+                    margin-left: 50px;
+                }
+            }
+        }
+    }
+
+
+    .container{
+        margin: 0% 10%;
+        padding: 100px 0;
+        // background-color: beige;
+        .title{
+            .header{
+                font-size: 30px;
+                hr{
+                    @include underline(145px, -20px);
+                }
+            }
+        }
+        .content{
+            display: flex;
+            padding: 20px 0;
+            justify-content: space-between;
+            // margin-top: 50px;
+
+            .map{
+                .img{
+
+                }
+                .address{
+                    margin-top: 34px;
+                }
+            }
+            .form{
+                width: 100%;
+                
+                // margin-right: 200px;
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    .text-input{
+                        padding: 20px;
+                        margin-bottom: 20px;
+                        // width: 100%;
+                    }
+                    textarea{
+                        padding: 20px;
+                        margin-bottom: 20px;
+                    }
+                    button{
+                        // text-decoration: none;
+                        border-style: none;
+                        width: 140px;
+                        height: 50px;
+                        background-color: #79ADDC;
+                        color: white;
+                    }
+                    button:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1222 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: "proxima";
+  src: url(/fonts/FontsFree-Net-Proxima-Nova-ExCn-Reg.otf);
+}
+.site-container {
+  max-width: 100%;
+  min-height: 100%;
+  background-color: white;
+}
+
+.main-nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 800px;
+  height: 92px;
+  margin: 0 auto;
+  font-family: "proxima-nova";
+  color: #79ADDC;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 10;
+  border-bottom: 2px solid white;
+}
+@media only screen and (max-width: 800px) {
+  .main-nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .main-nav .logo {
+    display: none;
+  }
+  .main-nav .links {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+  }
+  .main-nav .links a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+  }
+}
+.main-nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main-nav .logo {
+  color: white;
+  font-size: 20px;
+  padding: 8px 4px;
+  margin-left: 20px;
+  border: 2px solid white;
+}
+.main-nav a {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 0 10px;
+}
+.main-nav .border {
+  border-right: 1px solid #79ADDC;
+}
+.main-nav .active {
+  font-weight: bold;
+  color: #79ADDC;
+}
+
+.white-nav {
+  background-color: rgba(255, 255, 255, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 800px;
+  height: 92px;
+  margin: 0 auto;
+  font-family: "proxima-nova";
+  color: #79ADDC;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 10;
+  border-bottom: 2px solid black;
+}
+@media only screen and (max-width: 800px) {
+  .white-nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .white-nav .logo {
+    display: none;
+  }
+  .white-nav .links {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+  }
+  .white-nav .links a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
+}
+.white-nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.white-nav .logo {
+  color: black;
+  font-size: 20px;
+  padding: 8px 4px;
+  margin-left: 20px;
+  border: 2px solid black;
+}
+.white-nav a {
+  color: black;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 0 10px;
+}
+.white-nav .border {
+  border-right: 1px solid #79ADDC;
+}
+.white-nav .active {
+  font-weight: bold;
+  color: #79ADDC;
+}
+
+.hero {
+  width: 100%;
+  height: 500px;
+  background-image: url(../images/hero.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+@media screen and (min-width: 500px) {
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hero .container p {
+    width: 500px;
+  }
+}
+.hero .overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
+.hero .container {
+  text-align: center;
+  font-family: "proxima-nova";
+  color: white;
+  display: inline;
+  z-index: 0;
+}
+.hero .container h1 {
+  font-size: 60px;
+}
+.hero .container p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  font-style: italic;
+  padding: 20px;
+}
+.hero .container a {
+  text-decoration: none;
+}
+.hero .container .read-more {
+  margin: 0 auto;
+  background-color: #79ADDC;
+  color: white;
+  padding: 11px 21px;
+  border: none;
+  width: 130px;
+  height: 40px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.promos {
+  width: 100%;
+  min-height: 400px;
+  background-color: white;
+  margin-top: -50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (max-width: 800px) {
+  .promos .promo-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.promos .promo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.promos .promo-container .promo {
+  position: relative;
+  width: 240px;
+  height: 304px;
+  overflow: hidden;
+  text-align: center;
+  font-family: "proxima-nova";
+  color: white;
+  padding: 40px 20px;
+  margin: 25px;
+  display: inline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+.promos .promo-container .promo .overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.promos .promo-container .promo h1 {
+  font-size: 40px;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+.promos .promo-container .promo h2 {
+  margin-bottom: 50px;
+  font-weight: 100;
+}
+.promos .promo-container .promo a {
+  text-decoration: none;
+}
+.promos .promo-container .promo .learn-more {
+  margin: 0 auto;
+  background-color: #79ADDC;
+  color: white;
+  padding: 11px 21px;
+  border: none;
+  width: 135px;
+  height: 40px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.promos .promo-container .promo-bg-1 {
+  background-image: url(../images/promo-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.promos .promo-container .promo-bg-2 {
+  background-image: url(../images/promo-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.promos .promo-container .promo-bg-3 {
+  background-image: url(../images/promo-3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.booking {
+  min-height: 300px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px 0 100px 0;
+}
+@media only screen and (max-width: 800px) {
+  .booking .form h1 {
+    text-align: center;
+  }
+  .booking .double-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .booking .double-input h1 {
+    margin: 20px;
+    width: 100px;
+  }
+  .booking .double-input input {
+    margin: 20px;
+  }
+  .booking .checkInOut {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .booking .date-input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .booking .date-input .dateLabel {
+    text-align: center;
+  }
+  .booking .guest-count .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .booking .guest-count .container .selector {
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .booking .guest-count .container .selector label {
+    margin-right: 0px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 801px) {
+  .booking .double-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .booking .double-input input {
+    font-size: 18px;
+    padding: 20px;
+  }
+  .booking .double-input .left {
+    width: 40%;
+    margin-right: 20px;
+  }
+  .booking .double-input .right {
+    width: 60%;
+  }
+  .booking .guest-count .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+}
+.booking .form {
+  width: 820px;
+  height: 100%;
+  font-family: "proxima-nova";
+}
+.booking .form input {
+  font-size: 18px;
+  padding: 20px;
+}
+.booking .form label {
+  font-size: 18px;
+  margin-right: 0px;
+}
+.booking .form h1 {
+  font-size: 60px;
+  font-weight: 100;
+}
+.booking .form .date-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+.booking .form .date-input label {
+  width: 15%;
+}
+.booking .form .date-input input {
+  width: 85%;
+}
+.booking .form .guest-count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+.booking .form .guest-count .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.booking .form .guest-count .container .selector {
+  padding-left: 10px;
+  text-align: center;
+}
+.booking .form .guest-count .container .selector select {
+  font-size: 18px;
+  padding: 20px;
+  width: 100%;
+}
+.booking .form .message {
+  margin-bottom: 40px;
+  padding: 20px;
+}
+.booking .form .message textarea {
+  padding: 15px 20px;
+  font-size: 18px;
+  text-align: left;
+  vertical-align: top;
+  width: 100%;
+  min-height: 192px;
+}
+.booking .form .submit {
+  background-color: #79ADDC;
+  color: white;
+  padding: 11px 21px;
+  border: none;
+  width: 100%;
+  height: 60px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+footer {
+  background-color: #79ADDC;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .container h1, footer .container p {
+  font-family: "proxima-nova";
+  color: white;
+  margin: 0;
+}
+footer .container h1 {
+  font-size: 20px;
+  color: white;
+  padding: 8px 4px;
+  margin-left: 20px;
+  border: 2px solid white;
+}
+footer .container p {
+  font-size: 12px;
+  font-weight: 100;
+}
+footer .container .socials i {
+  font-size: 25px;
+  color: white;
+  margin-right: 5px;
+}
+
+.about-page {
+  background-color: white;
+  width: 100%;
+  min-height: 100%;
+}
+.about-page .about {
+  padding-top: 100px;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.about-page .about .container {
+  margin: 2% 10%;
+}
+.about-page .about .container .header {
+  font-family: "proxima-nova";
+  font-size: 30px;
+}
+.about-page .about .container .header hr {
+  border-bottom: 2px solid black;
+  width: 165px;
+  margin-top: -30px;
+}
+.about-page .about .container .text {
+  padding-top: 40px;
+  font-family: "proxima-nova";
+  font-size: 16px;
+}
+@media only screen and (min-width: 800px) {
+  .about-page .about .container .text {
+    padding-top: 40px;
+    font-family: "proxima-nova";
+    font-size: 16px;
+    width: 80%;
+  }
+  .about-page .client .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0px;
+  }
+  .about-page .client .content .img {
+    max-width: 260px;
+  }
+  .about-page .client .content .img img {
+    width: 100%;
+    height: auto;
+  }
+  .about-page .client .content .textbox {
+    max-width: 400px;
+    padding: 0 0 0 20px;
+  }
+  .about-page .client .content .textbox .quote {
+    width: 100%;
+  }
+}
+.about-page .client {
+  padding: 50px 0;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.about-page .client .container {
+  margin: 2% 10%;
+}
+.about-page .client .container .header {
+  font-family: "proxima-nova";
+  font-size: 20px;
+}
+.about-page .client .container .header hr {
+  border-bottom: 2px solid black;
+  width: 235px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+.about-page .client .content .img img {
+  width: 100%;
+}
+.about-page .client .content .textbox .quote {
+  font-family: "proxima-nova";
+  font-style: italic;
+}
+.about-page .client .content .textbox .author {
+  font-family: "proxima-nova";
+  font-size: 20px;
+  color: #79ADDC;
+  text-align: right;
+}
+
+.tours-page {
+  background-color: white;
+  width: 100%;
+  min-height: 100%;
+}
+.tours-page .tours-container {
+  margin: 0 auto;
+  padding-top: 120px;
+  width: 100%;
+}
+.tours-page .tours-container .tours-banner {
+  width: 80%;
+  height: 200px;
+  background-image: url(../images/tours/tours-banner.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+.tours-page .tours-container .tours-banner .header p {
+  margin: 0;
+  font-family: "proxima-nova";
+  color: white;
+  font-size: 60px;
+}
+.tours-page .tours-container .tours-content .wrapper {
+  margin: 0 auto;
+  width: 818px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 45px;
+}
+.tours-page .tours-container .tours-content .wrapper .tour {
+  margin-bottom: 55px;
+  width: 236px;
+  height: 304px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "proxima-nova";
+  position: relative;
+}
+.tours-page .tours-container .tours-content .wrapper .tour img {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.5;
+}
+.tours-page .tours-container .tours-content .wrapper .tour .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+.tours-page .tours-container .tours-content .wrapper .tour .content h1 {
+  font-size: 40px;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+.tours-page .tours-container .tours-content .wrapper .tour .content h2 {
+  margin-bottom: 50px;
+  font-weight: 100;
+}
+.tours-page .tours-container .tours-content .wrapper .tour .content a {
+  text-decoration: none;
+}
+.tours-page .tours-container .tours-content .wrapper .tour .content .learn-more {
+  margin: 0 auto;
+  background-color: #79ADDC;
+  color: white;
+  padding: 11px 21px;
+  border: none;
+  width: 135px;
+  height: 40px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+@media only screen and (max-width: 830px) {
+  .tours-page .tours-container .tours-content .wrapper {
+    width: 527px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .tours-page .tours-container .tours-content .wrapper {
+    width: 236px;
+  }
+}
+
+.tour-hero {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 120px;
+  margin-bottom: 40px;
+}
+.tour-hero .hero-container {
+  position: relative;
+  background-color: black;
+  color: white;
+  font-family: "proxima-nova";
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.tour-hero .hero-container img {
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+}
+.tour-hero .hero-container h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 80px;
+  margin-left: 20px;
+}
+.tour-hero .hero-container p {
+  font-size: 30px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px;
+}
+@media only screen and (max-width: 1000px) {
+  .tour-hero .hero-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+  .tour-hero .hero-container h1 {
+    font-size: 40px;
+  }
+  .tour-hero .hero-container p {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .tour-hero .hero-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+  .tour-hero .hero-container h1 {
+    font-size: 20px;
+  }
+  .tour-hero .hero-container p {
+    font-size: 10px;
+  }
+}
+
+.photo-container .wrapper {
+  max-width: 978px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+.photo-container .wrapper img {
+  margin-bottom: 55px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .photo-container .wrapper {
+    width: 638px;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .photo-container .wrapper {
+    width: 298px;
+  }
+}
+.day-container .day-content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  font-family: "proxima-nova";
+}
+.day-container .day-content h1 {
+  font-size: 60px;
+}
+.day-container .day-content hr {
+  border: 2px solid black;
+  width: 160px;
+  margin-top: -20px;
+  margin-bottom: 36px;
+}
+.day-container .day-content p {
+  font-size: 16px;
+}
+
+.special-offers-page {
+  background-color: white;
+  width: 100%;
+  min-height: 400px;
+  font-family: "proxima-nova";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media only screen and (max-width: 800px) {
+  .special-offers-page .container .content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .special-offers-page .container .content .offer-right .text {
+    padding-top: 10px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .special-offers-page .container .content .offer-right .text {
+    width: 460px;
+  }
+}
+.special-offers-page .container {
+  margin: 2% 10%;
+  height: 100%;
+  width: 100%;
+  padding: 100px 0;
+}
+.special-offers-page .container .title {
+  font-size: 30px;
+}
+.special-offers-page .container .title hr {
+  border-bottom: 2px solid black;
+  width: 178px;
+  margin-top: -20px;
+}
+.special-offers-page .container .content {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.special-offers-page .container .content .offer-left img {
+  width: 199px;
+  height: 287px;
+}
+.special-offers-page .container .content .offer-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+.special-offers-page .container .content .offer-right .header {
+  font-size: 30px;
+}
+.special-offers-page .container .content .offer-right hr {
+  border-bottom: 2px solid black;
+  width: 180px;
+  margin-top: -20px;
+}
+.special-offers-page .container .content .offer-right .text {
+  font-size: 16px;
+}
+.special-offers-page .container .content .offer-right a {
+  text-decoration: none;
+}
+.special-offers-page .container .content .offer-right .learnMore {
+  font-family: "proxima-nova";
+  background-color: #79ADDC;
+  color: white;
+  padding: 11px 21px;
+  border: none;
+  width: 135px;
+  height: 40px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.blog-page {
+  background-color: white;
+  width: 100%;
+  min-height: 100%;
+  font-family: "proxima-nova";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media only screen and (max-width: 800px) {
+  .blog-page .container .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog-page .container .content .left {
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .blog-page .container {
+    margin: 2% 10%;
+    padding: 100px;
+  }
+  .blog-page .container .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .blog-page .container .content .left {
+    padding-bottom: 10px;
+  }
+  .blog-page .container .content .right .text {
+    width: 400px;
+  }
+}
+.blog-page .container {
+  padding: 100px 10px;
+  height: 100%;
+  width: 100%;
+}
+.blog-page .container .title .header {
+  font-size: 30px;
+}
+.blog-page .container .title .header hr {
+  border-bottom: 2px solid black;
+  width: 100px;
+  margin-top: -20px;
+}
+.blog-page .container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+}
+.blog-page .container .content .left {
+  width: 70px;
+  padding-right: 20px;
+}
+.blog-page .container .content .left .date {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  height: 50px;
+  width: 50px;
+  background-color: #79ADDC;
+  margin: 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.blog-page .container .content .left .date .day {
+  font-size: 12px;
+  margin-bottom: 0;
+  padding: 4px 0;
+  height: 30px;
+}
+.blog-page .container .content .left .date .month {
+  font-size: 12px;
+  height: 20px;
+}
+.blog-page .container .content .right img {
+  width: 100%;
+}
+.blog-page .container .content .right .header {
+  padding-top: 20px;
+}
+.blog-page .container .content .right .header p {
+  font-size: 15px;
+}
+.blog-page .container .content .right .text {
+  padding-top: 10px;
+  font-size: 13px;
+  color: #79ADDC;
+}
+
+.contact-page {
+  width: 100%;
+  min-height: 100%;
+  background-color: white;
+  font-family: "proxima-nova";
+}
+@media only screen and (max-width: 800px) {
+  .contact-page .container .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-page .container .content .map {
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .contact-page .container .content form {
+    margin-right: 200px;
+    margin-left: 50px;
+  }
+}
+.contact-page .container {
+  margin: 0% 10%;
+  padding: 100px 0;
+}
+.contact-page .container .title .header {
+  font-size: 30px;
+}
+.contact-page .container .title .header hr {
+  border-bottom: 2px solid black;
+  width: 145px;
+  margin-top: -20px;
+}
+.contact-page .container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact-page .container .content .map .address {
+  margin-top: 34px;
+}
+.contact-page .container .content .form {
+  width: 100%;
+}
+.contact-page .container .content .form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contact-page .container .content .form form .text-input {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.contact-page .container .content .form form textarea {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.contact-page .container .content .form form button {
+  border-style: none;
+  width: 140px;
+  height: 50px;
+  background-color: #79ADDC;
+  color: white;
+}
+.contact-page .container .content .form form button:hover {
+  cursor: pointer;
+}

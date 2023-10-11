@@ -1,0 +1,19 @@
+@mixin learnMoreBtn(){
+    font-family: 'proxima-nova';
+    // margin: 0 auto;
+    background-color: #79ADDC;
+    color: white;
+    padding: 11px 21px;
+    border: none;
+    width: 135px;
+    height: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+@mixin underline($width, $margin-top){
+    border-bottom: 2px solid black;
+    width: $width;
+    margin-top: $margin-top;
+}

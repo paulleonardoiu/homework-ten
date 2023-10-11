@@ -1,0 +1,87 @@
+// @import "mixins.scss";
+
+.special-offers-page{
+    background-color: white;
+    width: 100%;
+    min-height: 400px;
+    font-family: 'proxima-nova';
+    display: flex;
+
+    // Phone
+    @media only screen and (max-width: 800px){
+        .container{
+            .content{
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                // width: auto;
+                .offer-right{
+                    .text{
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    // Desktop
+    @media only screen and (min-width: 800px){
+        .container{
+            .content{
+                // width: 50%;
+                .offer-right{
+                    .text{
+                        width: 460px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .container{
+        margin: 2% 10%;
+        // background-color: yellow;
+        height: 100%;
+        width: 100%;
+        padding: 100px 0;
+        .title{
+            font-size: 30px;
+            // background-color: red;
+            hr{
+                @include underline(178px, -20px);
+            }
+        }
+        .content{
+            padding: 20px;
+            display: flex;
+            // width: 50%;
+            .offer-left{
+                img{
+                    width: 199px;
+                    height: 287px;
+                }
+            }
+            .offer-right{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding:  20px;
+                .header{
+                    font-size: 30px;
+                }
+                hr{
+                    @include underline(180px, -20px);
+                }
+                .text{
+                    font-size: 16px;
+                }
+                a{
+                    text-decoration: none;
+                }
+                .learnMore{
+                    @include learnMoreBtn();
+                }
+            }
+        }
+    }
+}

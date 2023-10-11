@@ -1,0 +1,152 @@
+.about-page{
+    background-color: white;
+    width: 100%;
+    min-height: 100%;
+
+
+
+    .about{
+        padding-top: 100px;
+        min-height: 400px;
+        // min-height: 100%;
+        // background-color: blanchedalmond;
+        display: flex;
+        .container{
+            // padding: 20px;
+            // background-color: aquamarine;
+            margin: 2% 10%;
+            .header{
+                font-family: 'proxima-nova';
+                font-size: 30px;
+                // background-color: red;
+                h1{
+                    // border-bottom: 2px solid black;
+                    // width: 165px;
+                    // background-color: blue;
+                }
+                hr{
+                    border-bottom: 2px solid black;
+                    width: 165px;
+                    margin-top: -30px;
+                }
+            }
+            .text{
+                padding-top: 40px;
+                // padding-right: 200px;
+                font-family: 'proxima-nova';
+                font-size: 16px;
+                // width: 80%;
+            }
+        }
+    }
+
+    // Desktop
+    @media only screen and (min-width: 800px) {
+        
+        .about{
+            .container{
+                header{
+
+                }
+                .text{
+                    padding-top: 40px;
+                    // padding-right: 200px;
+                    font-family: 'proxima-nova';
+                    font-size: 16px;
+                    width: 80%;
+                }
+            }
+        }
+
+        .client{
+            .container{
+                // background-color: blue;
+                .header{
+                    hr{
+                        
+                    }
+                    // background-color: blue;
+                    // color: blue;
+                }
+            }
+            .content{
+                // background-color: blue;
+                // outline: auto;
+                display: flex;
+                // float: left;
+                margin: 0px;
+                .img{
+                    // width: 260px;
+                    max-width: 260px;
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .textbox{
+                    // display: flex;
+                    max-width: 400px;
+                    padding: 0 0 0 20px;
+                    .quote{
+                        width: 100%;
+                    }
+                    .author{
+                    }
+                }
+            }
+        }
+    }
+
+    ////////////////////////////////////
+
+    // Mobile
+    .client{
+        padding: 50px 0;
+        min-height: 400px;
+        // background-color: tan;
+        display: flex;
+        .container{
+            // background-color: aquamarine;
+            margin: 2% 10%;
+            .header{
+                font-family: 'proxima-nova';
+                font-size: 20px;
+                // background-color: red;
+                h1{
+                    // border-bottom: 2px solid black;
+                    // width: 200px;
+                    // background-color: blue;
+                }
+                hr{
+                    border-bottom: 2px solid black;
+                    width: 235px;
+                    margin-top: -20px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .content{
+            // margin: 20px;
+            // display: flex;
+            .img{
+                // padding: 20px 0;
+                img{
+                    width: 100%;
+                }
+            }
+            .textbox{
+                .quote{
+                    font-family: 'proxima-nova';
+                    font-style: italic;
+                }
+                .author{
+                    font-family: 'proxima-nova';
+                    font-size: 20px;
+                    color: #79ADDC;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+

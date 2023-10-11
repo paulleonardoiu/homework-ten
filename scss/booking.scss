@@ -1,0 +1,194 @@
+.booking{
+    min-height: 300px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    padding: 40px 0 100px 0;
+    
+
+    // Phone
+    @media only screen and (max-width: 800px){
+
+        .form{
+            h1{
+                text-align: center;
+            }
+        }
+        .double-input{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            h1{
+                margin: 20px;
+                width: 100px;
+            }
+            input{
+                margin: 20px;
+            }
+        }
+
+        .checkInOut{
+            justify-content: center;
+            align-items: center;
+        }
+        .date-input{
+            flex-direction: column;
+            justify-content: left;
+            .dateLabel{
+                text-align: center;
+            }
+        }
+
+        .guest-count{
+            .container{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100%;
+                .selector{
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;     
+                    justify-content: center;
+                    label{
+                        margin-right: 0px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    // Desktop
+    @media only screen and (min-width: 801px){
+        .double-input{
+            display: flex;
+            margin-bottom: 20px;
+            input{
+                font-size: 18px;
+                padding: 20px;
+            }
+            .left{
+                width: 40%;
+                margin-right: 20px;
+            }
+            .right{
+                width: 60%;
+            }
+        }
+        .guest-count{
+            .container{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100%;
+            }
+        }
+    }
+
+    .form{
+
+
+        width: 820px;
+        // width: 100%;
+        height: 100%;
+
+        font-family: 'proxima-nova';
+        input{
+            font-size: 18px;
+            padding: 20px;
+        }
+        label{
+            font-size: 18px;
+            margin-right: 0px;
+        }
+        
+        h1{
+            font-size: 60px;
+            font-weight: 100;
+        }
+        // .double-input{
+        //     display: flex;
+        //     margin-bottom: 20px;
+        //     // input{
+        //     //     font-size: 18px;
+        //     //     padding: 20px;
+        //     // }
+        //     .left{
+        //         width: 40%;
+        //         margin-right: 20px;
+        //     }
+        //     .right{
+        //         width: 60%;
+        //     }
+        // }
+
+        .date-input{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            label{
+                width: 15%;
+            }
+            input{
+                width: 85%;
+                // padding: 100px;
+                // color: red;
+            }
+        }
+
+        .guest-count{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            .container{
+                display: flex;
+                .selector{
+                    padding-left: 10px;
+                    text-align: center;
+                    select{
+                        font-size: 18px;
+                        padding: 20px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .message{
+            margin-bottom: 40px;
+            padding: 20px;
+            textarea{
+                padding: 15px 20px;
+                font-size: 18px;
+                text-align: left;
+                vertical-align: top;
+                width: 100%;
+                min-height: 192px;
+                // margin: 20px;
+            }
+        }
+
+        .submit{
+            // display:flex;
+            // justify-content: center;
+            // align-items: center;
+            // text-align: center;
+            // margin: 0 auto;
+            background-color: #79ADDC;
+            color: white;
+            padding: 11px 21px;
+            border: none;
+            width: 100%;
+            // width: 813px;
+            height: 60px;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+    }
+}
