@@ -702,7 +702,8 @@ var uaeContent = `<div class="site-container">
 export function changePageContent(pageID){
     if(pageID == "booking"){
         $("#app").html(eval("homeContent"));
-        window.location.href = "#booking";
+        $("title").html("Travel-fly HOME");
+
     }else{
         let pageName = pageID + "Content";
 
